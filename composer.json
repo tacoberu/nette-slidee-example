@@ -1,0 +1,36 @@
+{
+	"name": "tacoberu/nette-slidee-example",
+	"type": "project",
+	"description": "A simple example showing how to use a Nette Slidee.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Martin Takáč",
+			"homepage": "https://martin.takac.name"
+		},
+		{
+			"name": "David Grudl",
+			"homepage": "https://davidgrudl.com"
+		},
+		{
+			"name": "Nette Community",
+			"homepage": "https://nette.org/contributors"
+		}
+	],
+	"repositories": [
+		{"type": "vcs", "url": "git://github.com/tacoberu/phpcs-coding-standard"}
+	],
+	"require": {
+		"nette/bootstrap": "2.3.*",
+		"nette/robot-loader": "2.3.*",
+		"tracy/tracy": "2.3.*",
+		"tacoberu/nette-slidee": "^2.3"
+	},
+	"require-dev": {
+		"php": ">=5.3.0",
+		"phpunit/phpunit": "^4",
+		"phpunit/php-code-coverage": "^2",
+		"tacoberu/phpcs-coding-standard": "@dev",
+		"nette/code-checker": "@dev"
+	}
+}

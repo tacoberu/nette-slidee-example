@@ -1,0 +1,7 @@
+/vendor
+/temp
+/var
+/app/vendor
+!.bowerrc
+/document_root/css/*.css
+/app/config.local.neon
