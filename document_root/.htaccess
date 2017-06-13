@@ -1,0 +1,15 @@
+# disable directory listing
+Options -Indexes +FollowSymLinks
+
+# mod rewrite
+RewriteEngine On
+
+# Přesměrování na kanonickou adresu.
+# RewriteCond %{HTTP_HOST} ^magdalena\.takac\.name [NC,OR]
+# RewriteCond %{HTTP_HOST} ^(.*)\.mag\.takac\.name [NC]
+# RewriteRule (.*) http://mag.takac.name/$1 [R=301,QSA,L]
+
+# front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|tar\.gz)$ index.php [L]

@@ -1,0 +1,16 @@
+php:
+	date.timezone: Europe/Prague
+
+application:
+	mapping:
+		*: App\*Module\*Presenter
+
+services:
+
+extensions:
+	slidee: Taco\Nette\Slidee\Extension
+
+slidee:
+	pagesDir: %wwwDir%/../app/pages
+#	tempDir: %tempDir%
+#	presenter: Container
